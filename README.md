@@ -100,14 +100,14 @@ This is useful for:
 
 - rollback systems
 
-## Available Wrapper Functions
-Function	Description
-rng_create(seed, stream)	| Create a new RNG stream
-rng_destroy(handle) 	| Destroy an RNG stream
-rng_next(handle) 	 | Raw 32-bit random integer
-rng_float(handle) 	|	Random float in [0,1)
-rng_range(handle, min, max) 	|	Random float in range
-rng_int(handle, min, max) 	|	Random integer in range
-rng_chance(handle, probability) 	|	Probability check
-rng_snapshot(handle) 	|	Capture RNG state
-rng_restore(handle, snapshot) 	|	Restore RNG state
+| Function | Description |
+|----------|-------------|
+| `rng_create(seed, stream)` | Create a new RNG stream |
+| `rng_destroy(handle)` | Destroy an RNG stream |
+| `rng_next(handle)` | Raw 32-bit random integer |
+| `rng_float(handle)` | Random float in `[0,1)` |
+| `rng_range(handle, min, max)` | Random float in range |
+| `rng_int(handle, min, max)` | Random integer in range |
+| `rng_chance(handle, probability)` | Probability check |
+| `rng_snapshot(handle)` | Capture RNG state |
+| `rng_restore(handle, snapshot)` | Restore RNG state |
