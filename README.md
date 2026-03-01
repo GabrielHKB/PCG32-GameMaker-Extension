@@ -61,12 +61,12 @@ if (rng_chance(rng, 0.25))
     show_debug_message("Success!");
 }
 
-# Destroy the RNG when finished:
+## Destroy the RNG when finished:
 
 rng_destroy(rng);
 
 
-## RNG Streams
+# RNG Streams
 
 Each RNG stream is independent. This prevents randomness in one system from affecting another.
 
