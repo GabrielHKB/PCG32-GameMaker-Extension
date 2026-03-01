@@ -1,4 +1,4 @@
-## PCG32 RNG Extension for GameMaker
+# PCG32 RNG Extension for GameMaker
 
 A deterministic random number generator for GameMaker based on the PCG32 algorithm.
 
@@ -8,7 +8,7 @@ The core RNG is implemented in C++ and exposed to GameMaker through a wrapper AP
 
 This project was partly inspired by
 
-## Features
+# Features
 
 - High-quality PCG32 pseudo-random number generator
 
@@ -22,7 +22,7 @@ Lightweight GameMaker wrapper functions
 
 Suitable for procedural generation, AI randomness, loot systems, etc.
 
-## Installation
+# Installation
 
 Download the repository or release package.
 
@@ -36,25 +36,25 @@ PCG32_GM.yymps
 
 The extension and wrapper scripts will be added to your project automatically.
 
-## Basic Usage
+# Basic Usage
 
-# Create a new RNG stream:
+## Create a new RNG stream:
 
 var rng = rng_create(12345, 1);
 
-# Generate a random float:
+## Generate a random float:
 
 var value = rng_float(rng);
 
-# Generate a number in a range:
+## Generate a number in a range:
 
 var damage = rng_range(rng, 10, 20);
 
-# Generate a random integer:
+## Generate a random integer:
 
 var roll = rng_int(rng, 1, 6);
 
-# Chance check:
+## Chance check:
 
 if (rng_chance(rng, 0.25))
 {
@@ -66,7 +66,7 @@ if (rng_chance(rng, 0.25))
 rng_destroy(rng);
 
 
-# RNG Streams
+## RNG Streams
 
 Each RNG stream is independent. This prevents randomness in one system from affecting another.
 
@@ -78,15 +78,15 @@ rng_ai    = rng_create(seed, 3);
 
 This ensures that AI randomness (ie. attack selection) will not influence loot drops or world generation.
 
-# Saving and Restoring RNG State
+## Saving and Restoring RNG State
 
 The extension allows you to capture the exact RNG state and restore it later.
 
-# Capture the state:
+## Capture the state:
 
 var snap = rng_snapshot(rng);
 
-# Restore it later:
+## Restore it later:
 
 rng_restore(rng, snap);
 
@@ -100,7 +100,7 @@ This is useful for:
 
 - rollback systems
 
-# Available Wrapper Functions
+## Available Wrapper Functions
 Function	Description
 rng_create(seed, stream)	| Create a new RNG stream
 rng_destroy(handle) 	| Destroy an RNG stream
