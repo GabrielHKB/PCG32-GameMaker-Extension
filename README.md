@@ -77,7 +77,9 @@ Each RNG stream is independent. This prevents randomness in one system from affe
 Example:
 
 rng_world = rng_create(seed, 1);
+
 rng_loot  = rng_create(seed, 2);
+
 rng_ai    = rng_create(seed, 3);
 
 This ensures that AI randomness (ie. attack selection) will not influence loot drops or world generation.
