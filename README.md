@@ -6,7 +6,11 @@ This extension provides independent RNG streams, deterministic seeding, and the 
 
 The core RNG is implemented in C++ and exposed to GameMaker through a wrapper API.
 
-This project was partly inspired by
+The project was partly inspired by these two articles on the limitations and quirks of RNG in GameMaker:
+
+https://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html
+
+https://yal.cc/gamemaker-custom-prngs/
 
 # Features
 
