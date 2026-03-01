@@ -22,9 +22,9 @@ https://yal.cc/gamemaker-custom-prngs/
 
 - Save and restore RNG state
 
-Lightweight GameMaker wrapper functions
+- Lightweight GameMaker wrapper functions
 
-Suitable for procedural generation, AI randomness, loot systems, etc.
+- Suitable for procedural generation, AI randomness, loot systems, etc.
 
 # Installation
 
